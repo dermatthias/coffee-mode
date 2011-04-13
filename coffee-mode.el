@@ -568,6 +568,7 @@ line? Returns `t' or `nil'. See the README for more details."
   "Major mode for editing CoffeeScript..."
 
   ;; key bindings
+  (define-key coffee-mode-map (kbd "C-c C-f") 'coffee-compile-file)
   (define-key coffee-mode-map (kbd "C-c C-b") 'coffee-compile-buffer)
   (define-key coffee-mode-map (kbd "C-c C-r") 'coffee-compile-region)
   (define-key coffee-mode-map (kbd "C-c !") 'coffee-repl)
